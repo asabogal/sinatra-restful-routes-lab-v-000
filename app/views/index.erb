@@ -1,7 +1,6 @@
 TO DO: DISPLAY ALL RECIPES
-# <%require 'pry'%>
+
 <%@recipes.each do |recipe| %>
-# <%binding.pry%>
 <a href="/recipes/<%=recipe.id%>">Recipe #: <%=recipe.id%></a>
   <%=recipe.name%><br>
   <%=recipe.ingredients%><br>
