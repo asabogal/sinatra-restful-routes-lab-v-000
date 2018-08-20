@@ -1,5 +1,7 @@
 TO DO: DISPLAY ALL RECIPES
 
+<%@recipes ? true : false%>
+
 <%@recipes.each do |recipe| %>
 <a href="/recipes/<%=recipe.id%>">Recipe #: <%=recipe.id%></a>
   <%=recipe.name%><br>
