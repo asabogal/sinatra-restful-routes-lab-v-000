@@ -3,7 +3,7 @@
 <p><%=@recipe.ingredients%><br>
 <p><%=@recipe.cook_time%>
 
-<a href="/recipes/<$@recipe.id/edit">Edit Recipe</a>
+<a href="/recipes/<%@recipe.id/edit>%">Edit Recipe</a>
 
 <form action="/recipes/<%=@recipe.id%>/delete" >
   <input id="hidden" type="hidden" name="_method" value="delete">
