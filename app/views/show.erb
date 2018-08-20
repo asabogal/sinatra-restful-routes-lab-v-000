@@ -4,7 +4,6 @@
 <p><%=@recipe.cook_time%>
 
   <form action="/recipes/<%=@recipe.id%>/edit" >
-    <input id="hidden" type="hidden" name="_method" value="patch">
     <input type="submit" name="edit" value="edit">
   </form>
 
