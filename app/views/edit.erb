@@ -2,6 +2,7 @@
 INGREDIENTS: <%=@recipe.ingredients%>
 
 <form action="/recipes/<%=recipe.id%>/edit" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="submit" name="edit" value="submit">
 </form>
 
