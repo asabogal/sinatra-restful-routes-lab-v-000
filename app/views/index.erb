@@ -2,7 +2,7 @@ TO DO: DISPLAY ALL RECIPES
 
 <%@recipes.each do |recipe| %>
 <a href="/recipes/<%=recipe.id%>">Recipe #: <%=recipe.id%></a>
-  <%=recipe.name%>
-  <%=recipe.ingredients%>
+  <%=recipe.name%><br>
+  <%=recipe.ingredients%><br>
   <%=recipe.cook_time%>
 <%end%>
