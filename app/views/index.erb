@@ -1,9 +1,10 @@
 TO DO: DISPLAY ALL RECIPES
 
 <%@recipes.each do |recipe| %>
+<a href="/recipes/<%=recipe.id%>">Recipe # <%=recipe.id%></a>
   <%=recipe.name%>
   <%=recipe.ingredients%>
   <%=recipe.cook_time%>
-  <a href="/recipes/<%=recipe.id%>">Recipe # <%=recipe.id%></a>
+
 
 <%end%>
